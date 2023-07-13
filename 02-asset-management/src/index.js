@@ -3,7 +3,9 @@ import "./style.css"; // webpack 의 style-loader, css-loader 를 설정했으�
 import Icon from "./icon.svg";
 import Data from "./data.xml";
 import Notes from "./data.csv";
-import HIS from "./his_exported_data.json";
+import toml from "./data.toml";
+import yaml from "./data.yaml";
+import json5 from "./data.json5";
 
 function component() {
   const element = document.createElement("div");
@@ -16,6 +18,10 @@ function component() {
 
   console.log(Data);
   console.log(Notes);
+
+  console.log(toml.title, toml.owner.name);
+  console.log(yaml.title, yaml.owner.name);
+  console.log(json5.title, json5.owner.name);
   return element;
 }
 
