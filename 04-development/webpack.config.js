@@ -23,6 +23,8 @@ module.exports = {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+    /* webpack-dev-middleware */
+    publicPath: "/",
   },
   optimization: {
     /* webpack-dev-server, entry 가 여러 개일 때 발생하는 문제를 방지 */
@@ -34,5 +36,5 @@ module.exports = {
  * 코드가 변경될 때마다 자동으로 컴파일
  * 1. watch 모드: 디펜던시 그래프 내의 모든 파일에서의 변경사항을 감시하도록 지시할 수 있다. (webpack --watch) 브라우저를 새로고침 해야한다.
  * 2. webpack-dev-server
- * 3. webpack-dev-middleware
+ * 3. webpack-dev-middleware - webpack 에서 처리한 파일을 서버로 내보내는 래퍼.
  */

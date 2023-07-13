@@ -1,0 +1,14 @@
+{
+  "name": "07-authoring-library",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
